@@ -1,0 +1,21 @@
+.container {
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 100px 5px 5px;
+  margin-top: 10px;
+}
+.label {
+  padding: 5px 30px;
+  color: black;
+}
+.input {
+  margin-top: 10px;
+  color: black;
+  border: none;
+  padding: 5px 5px;
+  &:focus {
+    outline: 2px solid blue;
+  }
+}

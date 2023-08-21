@@ -1,0 +1,16 @@
+.container {
+  width: 350px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: lightslategray;
+  justify-content: center;
+  margin-left: 550px;
+  box-shadow: 16px 21px 85px 25px rgba(0, 0, 0, 0.75);
+}
+.title {
+  display: flex;
+  justify-content: center;
+  color: black;
+  padding: 5px 0px;
+  font-size: 34px;
+}

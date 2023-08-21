@@ -1,0 +1,44 @@
+.form {
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 100px 5px 5px;
+}
+.label_name {
+  display: flex;
+  gap: 30px;
+  margin-left: 15px;
+  padding: 5px 5px;
+  color: black;
+}
+.label_number {
+  display: flex;
+  gap: 15px;
+  margin-left: 15px;
+  padding: 5px 5px;
+  color: black;
+}
+.input {
+  color: black;
+  border: none;
+  padding: 5px 5px;
+  &:focus {
+    outline: 2px solid blue;
+  }
+}
+.button {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  margin-top: 10px;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+  &:active {
+    background-color: blue;
+  }
+}
