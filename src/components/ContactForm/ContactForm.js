@@ -7,7 +7,7 @@ export const ContactForm = ({ onSubmit }) => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
-  const handelChange = event => {
+  const handleChange = event => {
     const { name, value } = event.target;
     if ('name' === name) {
       setName(value);
@@ -16,28 +16,25 @@ export const ContactForm = ({ onSubmit }) => {
     }
   };
 
-  const handelSubmit = event => {
+  const handleSubmit = event => {
     event.preventDefault();
     onSubmit(name, number);
-    reset();
-  };
-
-  const reset = () => {
     setName('');
     setNumber('');
   };
+
 
   const inputNameId = nanoid();
   const inputTelId = nanoid();
 
   return (
-    <form className={css.form} onSubmit={handelSubmit}>
+    <form className={css.form} onSubmit={handleSubmit}>
       <label className={css.label_name} htmlFor={inputNameId}>
         Name
         <input
           className={css.input}
           id={inputNameId}
-          onChange={handelChange}
+          onChange={handleChange}
           type="text"
           name="name"
           pattern="^[a-zA-Zа-zА-Z]+(([' -][a-zA-Zа-zА-Z ])?[a-zA-Zа-zА-Z]*)*$"
@@ -52,7 +49,7 @@ export const ContactForm = ({ onSubmit }) => {
         <input
           className={css.input}
           id={inputTelId}
-          onChange={handelChange}
+          onChange={handleChange}
           value={number}
           type="tel"
           name="number"
